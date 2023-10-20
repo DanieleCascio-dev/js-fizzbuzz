@@ -4,20 +4,53 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: darkcyan;
+}
+
 .container {
   width: 80%;
   margin: 2rem auto;
+}
+
+h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 4rem;
 }
 
 .row {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  border: 1px solid black;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem 1rem;
 }
 
-.row div {
-  width: calc(100% / 10);
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 7 - 1rem);
   aspect-ratio: 1;
-  border: 1px solid blue;
+  background-color: lightblue;
+  box-shadow: 1px 1px 1px black;
+  transition: all 1s;
+}
+
+.box:hover {
+  transform: scale(120%) rotate(10deg);
+}
+
+.Fizz {
+  background-color: lightcoral;
+}
+
+.Buzz {
+  background-color: lightgreen;
+}
+
+.BuzzFizz {
+  background-color: rgb(186, 76, 240);
 }
