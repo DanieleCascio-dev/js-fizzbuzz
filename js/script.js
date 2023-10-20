@@ -5,21 +5,21 @@ let gridstring = "";
 for (let i = 1; i <= 100; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
     let result = "BuzzFizz";
-    console.log(result);
+    // console.log(result);
     gridstring += `<div class="box ${result}">${result}</div>`;
   } else if (i % 3 === 0) {
     let result = "Fizz";
-    console.log(result);
+    // console.log(result);
     gridstring += `<div class="box ${result}">${result}</div>`;
   } else if (i % 5 === 0) {
     let result = "Buzz";
-    console.log(result);
+    // console.log(result);
     gridstring += `<div class="box ${result}">${result}</div>`;
   } else {
     gridstring += `<div class="box">${i}</div>`;
   }
 
-  console.log(gridstring);
+  // console.log(gridstring);
 }
 
 rowElem.innerHTML = gridstring;

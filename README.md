@@ -39,8 +39,7 @@ creo una variabile let result = "BuzzFizz";
 <div classe="(result)">`${result}`</div>
 
 ALTRIMENTI non è un multiplo di 3 o 5
-result = i;
-messagge = <div>`${result}`</div>;
+messagge = <div>`${i}`</div>;
 
 **CSS e HTML**
 
